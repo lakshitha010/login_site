@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/1600x900/?restaurant') no-repeat center center/cover;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 120px 20px 40px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* Food Showcase */
+        .food-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            margin: 20px;
+        }
+
+        .food-item {
+            background: white;
+            color: black;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        .food-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #e67e22;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header">Welcome to Our Restaurant</div>
+
+    <!-- Food Showcase Section -->
+    <div class="food-container">
+        <div class="food-item">
+            <img src="https://source.unsplash.com/300x200/?pizza" alt="Pizza">
+            <h3>Delicious Pizza</h3>
+            <p>Hot and cheesy pizza with fresh toppings.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="https://source.unsplash.com/300x200/?burger" alt="Burger">
+            <h3>Juicy Burger</h3>
+            <p>Grilled to perfection with crispy fries.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="https://source.unsplash.com/300x200/?pasta" alt="Pasta">
+            <h3>Italian Pasta</h3>
+            <p>Freshly cooked with a rich, creamy sauce.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="https://source.unsplash.com/300x200/?sushi" alt="Sushi">
+            <h3>Fresh Sushi</h3>
+            <p>Authentic Japanese sushi with fresh ingredients.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="https://source.unsplash.com/300x200/?salad" alt="Salad">
+            <h3>Healthy Salad</h3>
+            <p>Fresh, crisp, and loaded with vitamins.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2025 Our Restaurant. All rights reserved.
+    </div>
+
+</body>
+
+</html>
